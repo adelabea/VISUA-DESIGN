@@ -1,0 +1,185 @@
+/* ------------ GLOBAL STYLES ------------ */
+@font-face {
+  font-family: "ClearfaceStd-Regular", Georgia, "Times New Roman", Times, serif;
+  src: url(ClearfaceStd-Regular.ttf) format("truetype");
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "ITC Clearface Std";
+}
+
+/* ------------ HEADER ------------ */
+
+nav {
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+label.logo-adelabea {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 80px;
+  margin-left: 3em;
+}
+
+nav ul {
+  float: right;
+  margin-right: 7em;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a {
+  font-size: 25px;
+  padding: 7px 13px;
+  border-bottom: 4px;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+  border-bottom: 0.2px;
+}
+.checkboton {
+  font-size: 25px;
+  float: right;
+  line-height: 80px;
+  margin-right: 4em;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo-adelabea {
+    text-align: center;
+  }
+
+  label.logo-adelabea {
+    font-size: 35px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width:950px) {
+  .checkboton {
+    display: block;
+  }
+  
+  label.logo-adelabea {
+    font-size: 30px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 60px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 50px;
+    padding: 3px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label.logo-adelabea {
+    font-size: 25px;
+  }
+}
+
+/* ------------ BODY ------------ */
+
+.details{
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.intro {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.5em;
+  margin-top: 2em;
+  margin: 0 6.5rem;
+  padding-bottom: 1em;
+}
+
+.content{
+  margin: 0 6.5rem;
+}
+
+.highlight{
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    font-size: 20px;
+  }
+
+  .student-details{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    font-size: 18px;
+  }
+
+  .student-details{
+    font-size: 13px;
+  }
+
+}
